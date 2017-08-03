@@ -92,6 +92,7 @@ void editor(BSP& bsp){
   }
 
   if(toExplorator){
+    bsp.build();
     explorator(bsp);
   }
 }

@@ -55,7 +55,9 @@ void explorator(BSP& bsp){
     }else{
       SDL_SetRenderDrawColor(renderer, 0,255,0,255);
     }
-    SDL_RenderDrawPoint(renderer, mousef.x, mousef.y);
+
+    SDL_Rect rect = {mouse.x-10, mouse.y-10, 20,20};
+    SDL_RenderDrawRect(renderer, &rect);
 
     //end
     SDL_RenderPresent(renderer);
